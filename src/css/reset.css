@@ -1,0 +1,11 @@
+/* resetando toda a estilização default do  html */
+
+*{
+    margin: 0;  /*espaçamento externo */
+    padding: 0; /* espaçamento interno */
+    box-sizing: border-box; /* largura padrão independe do conteúdo */
+}
+
+ul{
+    list-style: none;
+}

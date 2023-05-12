@@ -1,0 +1,139 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    /* sans-serif é uma fonte resera, caso ocorra algum problema com a primeira */
+    max-width: 1280px;
+    /* largura máxima do coneúdo */
+    margin: 0 auto;
+    /* centralizando o conteúdo */
+    background-color: #5e5e5bad;
+    color: #333333;
+}
+
+body.modo-escuro {
+    background-color: #212121;
+    color: #f5f5f5;
+}
+
+header {
+    background-color: none;
+    display: flex;
+    /* propriedade para deixar os ícones do cabeçalho lado a lado */
+    justify-content: space-between;
+    /* espaçamento entre os ícones */
+    padding: 25px;
+    /* espaçamento entre o body */
+}
+
+header .logo,
+header .img-btt {
+    width: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+header #botao-alterar-tema {
+    background: none;
+    border: none;
+}
+
+/* utilizando uma pseudo-classe (hover) para aumentar o ícones com o cursor do mouse */
+header .logo:hover,
+header .img-btt:hover,
+main .card-pokemon:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main {
+    padding: 25px;
+}
+
+main .listagem-pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    /* propriedade para deixar o conteúdo com várias linhas */
+    gap: 30px;
+    /* espaçamento entre os cartões */
+    justify-content: center;
+}
+
+main .card-pokemon {
+    background-color: #d8e3ec;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+    /* efeito suave de saída e entrada */
+}
+
+main .card-pokemon:hover {
+    background-color: #96e9e6;
+}
+
+.modo-escuro .card-pokemon {
+    background-color: #a8a8a8;
+}
+
+main .card-pokemon .info {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
+}
+
+main .card-pokemon .info span {
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+main .card-pokemon .gif {
+    width: 90px;
+    height: 90px;
+}
+
+main .card-pokemon .tipos {
+    display: flex;
+    gap: 15px;
+}
+
+.tipo-grama {
+    background-color: #7ac74c;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.tipo-veneno {
+    background-color: #df67ddfb;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.tipo-fogo {
+    background-color: #ee8130;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.tipo-agua {
+    background-color: #6390f0;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.tipo-inseto {
+    background-color: #a6b91a;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+main .descricao {
+    max-height: 80px;
+    overflow-y: scroll;
+    /* escondendo o texto que excedeu o cartao */
+    font-size: 14px;
+    padding-right: 10px;
+}
