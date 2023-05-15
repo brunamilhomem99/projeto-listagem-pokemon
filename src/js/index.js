@@ -8,8 +8,8 @@ botaoAlterarTema.addEventListener("click", () => {
     body.classList.toggle("modo-escuro");
 
     if (modoEscuroAtivo) {
-        imgLua.setAttribute("src", "/src/imagens/sun.png");
+        imgLua.setAttribute("src", "./imagens/sun.png");
     } else {
-        imgLua.setAttribute("src", "/src/imagens/moon.png");
+        imgLua.setAttribute("src", "./imagens/moon.png");
     }
 });
